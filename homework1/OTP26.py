@@ -2,7 +2,7 @@
 import string
 
 int_to_alpha_map = list(string.ascii_uppercase)
-assert len(int_to_alpha_map) == 26
+# assert len(int_to_alpha_map) == 26
 alpha_to_int_map = dict([(c, i) for i, c in enumerate(int_to_alpha_map)])
 
 
@@ -40,9 +40,9 @@ def keyof(msg, cph):
     return decode(cph, msg)
 
 
-assert code('TODAY', 'XVHEU') == 'QJKES'
-assert decode('QJKES', 'XVHEU') == 'TODAY'
-assert keyof('TODAY', 'QJKES') == 'XVHEU'
+# assert code('TODAY', 'XVHEU') == 'QJKES'
+# assert decode('QJKES', 'XVHEU') == 'TODAY'
+# assert keyof('TODAY', 'QJKES') == 'XVHEU'
 
 if __name__ == '__main__':
     print(code('HELLO', 'JFZTE'))
